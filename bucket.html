@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture by GluNi</title>
+    <link href="styles/style2safe.css" rel="stylesheet">
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script> 
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    
+  </head>
+
+  <body>
+    <header class="header"> 
+    <nav>        
+      <a class="title" href="/index.html">Интерьер</a>
+      <ul>
+        <li><a href="index.html">Каталог</a></li>
+        <li><a href="bucket.html">Корзина</a></li>      
+      </ul>
+    </nav>
+    </header>    
+
+    <main class="wrapperBucket">
+     <div class="layout">
+      
+      <section class="bucketList">
+        <div class="subHeader">
+          <span>Товар</span>
+          <span>Кол-во</span>
+        </div>         
+        <div id="appbucket" class="productsBucket"></div>
+        <div class=btnWrapper> 
+          <button type="button" class="button" id="clrBtn">Очистить корзину</button> 
+          <button type="button" class="button" id="cntnBtn">Продолжить покупки</button>
+        </div>   
+      </section> 
+      
+        <section class='customerData'>      
+          
+            <h3>Оформление заказа</h3>
+            
+            <form action="" method="get" class="form">
+              <label>
+                <input type="text" name="name" id="name" placeholder="Имя Фамилия" required>
+              </label>
+              <label>
+                <input type="tel" name="tel" id="tel" placeholder="+7 904 000 80 80" required>  
+              </label>
+              <label>
+                <input type="text" name="address" id="address" placeholder="Адрес доставки" required>
+              </label>
+              <p class="overall" id="totalSum">Итого:</p>
+              <div>
+                <button type="button" class="button" id="buyBtn">Оформить заказ</button>               
+              </div>
+            </form>          
+        </section>      
+     </div> 
+          
+    </main> 
+    
+
+      
+    <script type="text/babel" src="scripts/App2.js"></script>  
+  </body>
+</html>

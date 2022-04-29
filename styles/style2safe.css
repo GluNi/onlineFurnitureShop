@@ -1,0 +1,331 @@
+@font-face {
+	font-family: 'Montserrat', sans-serif;
+	src: url:('../fonts/Montserrat/Montserrat-Medium.ttf');
+}
+body, html {
+	padding: 0;
+	margin: 0 auto;
+	border: 0;
+	font-family: 'Montserrat';	
+	font-style: normal;
+	background: ##E5E5E5;
+	width: 1200px;
+	text-align: left;	
+	font-style: normal;
+	font-weight: 400;
+}
+.header {
+	background: #CCCCCC;
+	text-align: justify;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto 32px;
+	position: relative;
+	height: 76px;
+	top: 0px;
+}
+.title {
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 44px;
+}
+.layout {
+	display: flex;
+}
+@media screen and (min-width: 790px) and (max-width: 1200px) { 
+body, html {	
+	width: 786px;	
+}	
+	.layout {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+  	}
+}
+@media screen and (max-width: 789px) { 
+	body, html {	
+		width: 375px;
+	}	
+	.layout {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+  	}
+}
+.bucketList {
+	width: 786px;
+	margin-right: 32px;
+}
+@media screen and (min-width: 790px) and (max-width: 1200px) { 
+	.bucketList {
+		width: 786px;
+		margin-right: 24px;
+		margin-left: 24px;
+	}
+}
+}
+@media screen and (max-width: 789px) { 
+	.bucketList {
+		width: 343px;
+		margin-right: 16px;
+		margin-left: 16px;
+
+	}
+}
+.subHeader {
+	padding-bottom: 14px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 25px;
+	border-bottom: .5px solid #CACDD8;
+}
+
+
+
+li {  
+	display: inline-block;
+	font-size: 16px;
+	line-height: 20px;
+	color: #FFFFFF;
+	flex: none;
+	flex-grow: 0;
+	margin: 0px 32px;
+}
+ul {
+	list-style: none;
+	padding-left: 0;	
+}
+nav {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+.productBucket {	
+	margin-top: 32px;	
+	display: flex;
+	border-bottom: .5px solid #CACDD8;
+
+}
+.productItem {	
+	position: relative;
+	padding: 0 0 32px 0;
+	margin: 0;
+	height: 173px; 	
+}
+.productItemImg {	
+	background: #c4c4c4;
+	width: 173px;
+	height: 173px;
+	margin-right: 32px;
+	object-fit: cover;
+	
+}
+@media screen and (max-width: 789px) {
+	.productItemImg {	
+		display: none;
+	}
+}
+
+.productItemTitle {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 24px;
+	color: #000000;
+	margin: 0 0 14px 0;	
+}
+.productItemDescription {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #888888;	
+	margin-bottom: 16px;
+	max-width: 276px;	
+}
+@media screen and (max-width: 789px) {
+	.productItemDescription {
+		max-width: 253px;
+	}
+}
+.productItemPrice {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	color: #050505;
+	margin-bottom: 15px;
+	
+}
+.counterItem {	
+	text-align: right;
+	width: 45px;
+	height: 31px;
+	background: #f7f6f6;
+	border-radius: 6px;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 13px;
+	align-items: center;
+	margin-left: auto;
+}
+.counterItem p {
+	font-weight: 600;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #000;	
+}
+.arrows {
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+}
+.arrows button{
+	border: 0;
+	background: #f7f6f6;
+	cursor: pointer;
+}
+
+.arrows button:disabled svg {
+	border: 0;
+	stroke-opacity: 0.4;
+	cursor: pointer;
+}
+a, a:active, a:visited, a:link {
+	text-decoration: none;
+	color: #FFFFFF; 
+}
+.handlingItem a {	
+	color: #000000;
+}
+.handlingItem {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 17px;	
+	margin: 0 30px 0 0;
+	padding: 0;
+	align-items: center;
+	text-align: center;
+	text-decoration-line: underline;
+	color: #000000;
+
+}
+.customerData {
+	display: block;  	
+ 	float: right; 
+  	font-size: 24px;
+  	line-height: 36px;
+  	text-align: center;  	
+  	background-color: #F7F6F6;
+  	border-radius: 20px;  	
+	height: 556px;
+	width: 379px;
+  }
+@media screen and (min-width: 790px) and (max-width: 1200px) {
+	.customerData {
+		width: 376px;
+	}
+} 
+@media screen and (max-width: 789px) {
+	.customerData {
+		width: 343px;
+	}
+}
+
+.customerData h3 {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 36px;
+	text-align: center;
+	margin-top: 42px;
+	margin-bottom: 35px;
+}
+.customerData form {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.customerData form label {
+	margin-bottom: 44px;
+}
+.overall {
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	color: #000;
+	margin-bottom: 18px;
+}
+.button {
+	margin: 18px auto;
+	display: block;
+	outline: 0;
+	padding: 15px;
+	background: #f7f6f6;
+	border-radius: 20px;
+	border: 1px solid #000;
+	color: #000;
+	cursor: pointer;
+	font-size: 16px;
+	height: 44px;
+	width: 290px;
+	line-height: 0;
+}
+#clrBtn {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 17px;
+	color: #020202;
+	background: #E5E5E5;
+	border-radius: 50px;
+	width: 200px;
+}
+#cntnBtn {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 17px;
+	color: #FFFFFF;
+	background: #000000;
+	border-radius: 50px;
+	width: 200px;
+}
+@media screen and (min-width: 790px) and (max-width: 1200px) { 
+	.btnWrapper {		
+		text-align: center;  		
+	}
+}
+@media screen and (max-width: 789px) {
+	#clrBtn, #cntnBtn {
+		width: 157px;
+		font-size: 12px;
+		line-height: 15px;
+	}
+}
+
+.customerData form input {
+	font-family: Montserrat,sans-serif;
+	display: flex;
+	margin: 0 auto;
+	outline: none;
+	z-index: 1;
+	position: relative;
+	border: 0;
+	height: 24px;
+	width: 288px;
+	background: none;
+	border-bottom: 1px solid #cacdd8;
+	color: #212121;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+}
