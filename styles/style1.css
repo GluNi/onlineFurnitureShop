@@ -62,7 +62,7 @@ nav {
 	position: relative;
 }
 .select-wrapper::after {
-	content: url(icons/arrow.SVG);
+	content: url(./icons/arrow.SVG);
   	font-size: 1rem;
   	top: 50%;
   	transform: translateY(-50%);
@@ -126,7 +126,7 @@ option {
 	height: 21px;
 	width: 21px;
 	right: 60px;
-	background-image: url(icons/bucket.SVG);
+	background-image: url(./icons/bucket.SVG);
 }
 .productItemFavourite {
 	display: block;
@@ -138,7 +138,7 @@ option {
 	background-repeat: no-repeat;
 	height: 21px;
 	width: 21px;
-	background-image: url(icons/heart.SVG);
+	background-image: url(./icons/heart.SVG);
 }
 .productItemBucket:hover, .productItemFavourite:hover {	
 	opacity: 1;	
